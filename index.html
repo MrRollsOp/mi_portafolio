@@ -1,15 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portafolio Principal</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
   </head>
-  <body>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem minima
-      deleniti iusto, eaque ea eum obcaecati aperiam optio officiis, cupiditate,
-      ab nulla illo quasi nihil voluptate facere explicabo reiciendis! Odit.
-    </p>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h1 class="sitename">Portafolio</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="#hero" class="active">Inicio<br /></a>
+            </li>
+            <li><a href="#sobremi">Sobre Mi</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in" />
+
+        <div
+          class="container d-flex flex-column align-items-center justify-content-center text-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <h2>Soy Ignacio Mercado</h2>
+          <p>
+            <span
+              class="typed"
+              data-typed-items="Desarrollador, Jugador, Estudiante"
+            ></span>
+          </p>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="sobremi" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="row justify-content-between gy-4">
+                <div class="col-lg-5">
+                  <img
+                    src="assets/img/profile-img.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-lg-7 about-info">
+                  <p><strong>Nombre: </strong> <span>Ignacio Mercado</span></p>
+                  <p>
+                    <strong>Perfil: </strong> <span>Python full stack developer</span>
+                  </p>
+                  <p>
+                    <strong>Email: </strong>
+                    <span>ignaciomercadobarrientos@example.com</span>
+                  </p>
+                  <p><strong>Telefono: </strong> <span>+56 911002233</span></p>
+                </div>
+              </div>
+
+              <div class="skills-content skills-animation">
+                <h5>Skills</h5>
+
+                <div class="progress">
+                  <span class="skill"
+                    ><span>HTML</span> <i class="val">100%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!-- End Skills Item -->
+
+                <div class="progress">
+                  <span class="skill"
+                    ><span>CSS</span> <i class="val">90%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!-- End Skills Item -->
+
+                <div class="progress">
+                  <span class="skill"
+                    ><span>JavaScript</span> <i class="val">75%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!-- End Skills Item -->
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="about-me">
+                <h4>Sobre mi</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, sunt porro ut ipsam doloremque quasi eligendi quidem
+                  ducimus quaerat ea. Quibusdam inventore deleniti aliquam
+                  voluptates corporis voluptatem libero velit nostrum!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                  dicta ipsum ut corporis voluptatibus beatae. Ex ducimus eius
+                  officia obcaecati omnis totam sequi quas? Praesentium
+                  exercitationem et tempora maxime quidem.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  nostrum vel, corporis alias facilis repellendus provident
+                  excepturi dolores ratione sed reprehenderit neque modi aliquam
+                  consectetur, inventore officia esse, eaque repellat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Services Section -->
+      <section id="proyectos" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Proyectos</h2>
+          <p>
+            En esta seccion se mostraran los proyectos desarrollados hasta ahora
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item position-relative">
+                <img
+                    src="assets/img/imagen.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                <a href="#" class="stretched-link">
+                  <h3>Implementacion de Git Hub y Git</h3>
+                </a>
+                <p>
+                  Se logro implementar el versionamiento de git de manera remota en Git Hub
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item position-relative">
+                <img
+                    src="assets/img/imagen2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                <a href="#" class="stretched-link">
+                  <h3>Implementacion de JQuery</h3>
+                </a>
+                <p>
+                  Implementacion de Javascript en codigo html para dinamismo
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item position-relative">
+                <img
+                    src="assets/img/imagen3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                <a href="#" class="stretched-link">
+                  <h3>Carrousel automatico</h3>
+                </a>
+                <p>
+                  El uso de Carrousel de Bootstrap simplifica la implementacion y codigo
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Resume Section -->
+      <section id="habilidades" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resumen</h2>
+          <p>
+            Hasta el día de hoy he desarrollado codigo en html, css y Javascript
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+
+              <h3 class="resume-title">Habilidades destacadas</h3>
+              <div class="resume-item">
+                <h4>Desarrollo HTML, CSS y JavaScript</h4>
+                <h5>Modulo 2 - Sesión 1 a 10</h5>
+                <p><em>Bootcamp</em></p>
+                <p>
+                  He logrado aprender tanto habilidades como conocimiento, dentro de las horas asincronicas he logrado potenciar mi investigacion autodidacta
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Implementacion de GIT y GitHub</h4>
+                <h5>Modulo 2 - Sesión 11</h5>
+                <p><em>Bootcamp</em></p>
+                <p>
+                  He logrado aprender tanto habilidades como conocimiento, dentro de las horas asincronicas he logrado potenciar mi investigacion autodidacta
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Resume Section -->
+
+
+      <!-- Contact Section -->
+      <section id="contacto" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contacto</h2>
+          <p>
+            Aqui podras comunicarte de manera directa
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-5">
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Direccion</h3>
+                    <p>O'higgins, Rancagua</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Llama</h3>
+                    <p>+56 911002233</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email</h3>
+                    <p>ignaciomercadobarrientos@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+            </div>
+          </div>
+
+          <form
+            class="php-email-form"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Ingresa tu Nombre"
+                  required=""
+                />
+              </div>
+
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Ingresa tu Email"
+                  required=""
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  placeholder="Asunto"
+                  required=""
+                />
+              </div>
+
+              <div class="col-md-12">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="6"
+                  placeholder="Mensaje"
+                  required=""
+                ></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <button type="submit" id="boton">Enviar Mensaje</button>
+              </div>
+            </div>
+          </form>
+          <!-- End Contact Form -->
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer accent-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">Ignacio Mercado</strong>
+            <span>Todos los derechos reservados</span>
+          </p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Diseñado por <a href="https://bootstrapmade.com/">Ignacio Mercado</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('#boton').click(function() {
+              alert('Mensaje enviado');
+          });
+      });
+  </script>
   </body>
 </html>

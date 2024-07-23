@@ -7,11 +7,8 @@
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
-    <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
@@ -28,12 +25,6 @@
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
@@ -51,7 +42,7 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li>
-              <a href="#hero" class="active">Inicio<br /></a>
+              <a href="#hero">Inicio<br /></a>
             </li>
             <li><a href="#sobremi">Sobre Mi</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
@@ -64,7 +55,6 @@
     </header>
 
     <main class="main">
-      <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
         <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in" />
 
@@ -82,20 +72,24 @@
           </p>
         </div>
       </section>
-      <!-- /Hero Section -->
-
-      <!-- About Section -->
       <section id="sobremi" class="about section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
             <div class="col-md-6">
               <div class="row justify-content-between gy-4">
                 <div class="col-lg-5">
-                  <img
-                    src="assets/img/profile-img.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
+
+                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="assets/img/profile-img.jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="assets/img/profile-img2.jpg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="col-lg-7 about-info">
                   <p><strong>Nombre: </strong> <span>Ignacio Mercado</span></p>
@@ -127,7 +121,6 @@
                     ></div>
                   </div>
                 </div>
-                <!-- End Skills Item -->
 
                 <div class="progress">
                   <span class="skill"
@@ -143,7 +136,6 @@
                     ></div>
                   </div>
                 </div>
-                <!-- End Skills Item -->
 
                 <div class="progress">
                   <span class="skill"
@@ -159,7 +151,6 @@
                     ></div>
                   </div>
                 </div>
-                <!-- End Skills Item -->
               </div>
             </div>
 
@@ -167,40 +158,26 @@
               <div class="about-me">
                 <h4>Sobre mi</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugit, sunt porro ut ipsam doloremque quasi eligendi quidem
-                  ducimus quaerat ea. Quibusdam inventore deleniti aliquam
-                  voluptates corporis voluptatem libero velit nostrum!
+                  Soy un joven estudiante apasionado por la programación y el desarrollo de software. Desde que descubrí el mundo de la tecnología, he dedicado gran parte de mi tiempo a aprender y perfeccionar mis habilidades en diversos lenguajes de programación. Me encanta enfrentar desafíos técnicos y encontrar soluciones creativas a problemas complejos, siempre buscando mejorar y ampliar mis conocimientos.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  dicta ipsum ut corporis voluptatibus beatae. Ex ducimus eius
-                  officia obcaecati omnis totam sequi quas? Praesentium
-                  exercitationem et tempora maxime quidem.
+                  Además de mi amor por la programación, soy un entusiasta de los videojuegos. Me fascina cómo los desarrolladores combinan creatividad y tecnología para crear experiencias inmersivas y entretenidas. Este interés no solo me proporciona horas de diversión, sino que también me inspira a explorar el desarrollo de videojuegos y a entender mejor los aspectos técnicos y artísticos que los componen.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                  nostrum vel, corporis alias facilis repellendus provident
-                  excepturi dolores ratione sed reprehenderit neque modi aliquam
-                  consectetur, inventore officia esse, eaque repellat.
+                  Estoy en constante aprendizaje, siempre buscando nuevas oportunidades para expandir mis horizontes. Ya sea a través de cursos en línea, talleres, o proyectos personales, siempre estoy dispuesto a aprender algo nuevo y a aplicar ese conocimiento en mis proyectos. Creo firmemente en la importancia de mantenerse actualizado en un campo tan dinámico como la tecnología, y me esfuerzo por ser una versión mejor de mí mismo cada día.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /About Section -->
-
-      <!-- Services Section -->
       <section id="proyectos" class="services section">
-        <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Proyectos</h2>
           <p>
             En esta seccion se mostraran los proyectos desarrollados hasta ahora
           </p>
         </div>
-        <!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
@@ -223,7 +200,6 @@
                 </p>
               </div>
             </div>
-            <!-- End Service Item -->
 
             <div
               class="col-lg-4 col-md-6"
@@ -244,7 +220,6 @@
                 </p>
               </div>
             </div>
-            <!-- End Service Item -->
 
             <div
               class="col-lg-4 col-md-6"
@@ -269,10 +244,7 @@
         </div>
       </section>
 
-
-      <!-- Resume Section -->
       <section id="habilidades" class="resume section">
-        <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Resumen</h2>
           <p>
@@ -293,8 +265,6 @@
                   He logrado aprender tanto habilidades como conocimiento, dentro de las horas asincronicas he logrado potenciar mi investigacion autodidacta
                 </p>
               </div>
-              <!-- Edn Resume Item -->
-
               <div class="resume-item">
                 <h4>Implementacion de GIT y GitHub</h4>
                 <h5>Modulo 2 - Sesión 11</h5>
@@ -303,25 +273,22 @@
                   He logrado aprender tanto habilidades como conocimiento, dentro de las horas asincronicas he logrado potenciar mi investigacion autodidacta
                 </p>
               </div>
-              <!-- Edn Resume Item -->
             </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Resume Section -->
 
 
-      <!-- Contact Section -->
       <section id="contacto" class="contact section">
-        <!-- Section Title -->
+  
         <div class="container section-title" data-aos="fade-up">
           <h2>Contacto</h2>
           <p>
             Aqui podras comunicarte de manera directa
           </p>
         </div>
-        <!-- End Section Title -->
+
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
@@ -335,18 +302,18 @@
                   </div>
                 </div>
               </div>
-              <!-- End Info Item -->
+
 
               <div class="col-lg-4">
                 <div class="info-item d-flex align-items-center">
-                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <i class="bi bi-telephone flex-shrink-0" id="telefono"></i>
                   <div>
                     <h3>Llama</h3>
                     <p>+56 911002233</p>
                   </div>
                 </div>
               </div>
-              <!-- End Info Item -->
+
 
               <div class="col-lg-4">
                 <div class="info-item d-flex align-items-center">
@@ -357,7 +324,7 @@
                   </div>
                 </div>
               </div>
-              <!-- End Info Item -->
+
             </div>
           </div>
 
@@ -412,10 +379,8 @@
               </div>
             </div>
           </form>
-          <!-- End Contact Form -->
         </div>
       </section>
-      <!-- /Contact Section -->
     </main>
 
     <footer id="footer" class="footer accent-background">
@@ -434,16 +399,11 @@
           <a href=""><i class="bi bi-linkedin"></i></a>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Diseñado por <a href="https://bootstrapmade.com/">Ignacio Mercado</a>
+          Diseñado por Ignacio Mercado</a>
         </div>
       </div>
     </footer>
 
-    <!-- Scroll Top -->
     <a
       href="#"
       id="scroll-top"
@@ -451,21 +411,11 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
-    <!-- Preloader -->
     <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
       $(document).ready(function() {
@@ -473,6 +423,9 @@
               alert('Mensaje enviado');
           });
       });
+      $("#telefono").on("dblclick", function() {
+          alert('Llamando...');
+      } );
   </script>
   </body>
 </html>
